@@ -9,3 +9,7 @@ header {
     background-color: lightseagreen;
     color: white;
 }
+
+li {
+    list-style: none;
+}
