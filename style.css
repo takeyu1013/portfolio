@@ -6,10 +6,21 @@ body {
 }
 
 header {
-    background-color: lightseagreen;
+    background: linear-gradient(aquamarine, lightseagreen);
     color: white;
+    text-align: center;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 li {
     list-style: none;
+    width: 50%;
+}
+li:nth-child(wn) {
+    margin-right: 0;
 }
