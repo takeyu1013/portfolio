@@ -14,13 +14,13 @@ header {
 ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content:center;
 }
 
 li {
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
     list-style: none;
+    margin: 1rem 0;
+    text-align: center;
     width: 50%;
-}
-li:nth-child(wn) {
-    margin-right: 0;
 }
