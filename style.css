@@ -11,6 +11,10 @@ header {
     text-align: center;
 }
 
+h1 {
+    margin: 10rem;
+}
+
 ul {
     display: flex;
     flex-wrap: wrap;
