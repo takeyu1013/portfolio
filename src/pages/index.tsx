@@ -78,6 +78,13 @@ const Index: NextPage = () => {
           </div>
           <div className="sns">
             <h2>SNS</h2>
+            <ul>
+              <li>GitHub</li>
+              <li>Qiita</li>
+              <li>Facebook</li>
+              <li>Twitter</li>
+              <li>Instagrem</li>
+            </ul>
           </div>
         </div>
       </main>
