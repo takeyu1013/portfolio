@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+import Card from "../components/Card";
 
 const Index: NextPage = () => {
   return (
@@ -8,8 +9,32 @@ const Index: NextPage = () => {
           takeyu1013's portfolio
         </h1>
       </header>
-      <main className="flex flex-wrap">
-        <div className="mx-auto p-4 w-screen lg:w-1/3">
+      <main className="flex flex-wrap justify-center">
+        <Card title="プロフィール">
+          <table className="mx-auto">
+            <tr className="border">
+              <td>名前</td>
+              <td>たけゆ</td>
+            </tr>
+            <tr className="border bg-green-100">
+              <td>本名</td>
+              <td>Yuto Takeuchi</td>
+            </tr>
+            <tr className="border">
+              <td>出身地</td>
+              <td>兵庫県</td>
+            </tr>
+            <tr className="border bg-green-100">
+              <td>今住んでいるところ</td>
+              <td>神奈川県</td>
+            </tr>
+            <tr className="border">
+              <td>職業</td>
+              <td>セールスエンジニア</td>
+            </tr>
+          </table>
+        </Card>
+        {/*        <div className="mx-auto p-4 w-screen lg:w-1/3">
           <h2 className="text-center text-xl font-bold pb-2">プロフィール</h2>
           <table className="mx-auto">
             <tr className="border">
@@ -90,6 +115,7 @@ const Index: NextPage = () => {
             <li>Instagrem</li>
           </ul>
         </div>
+  */}
       </main>
     </div>
   );
