@@ -9,7 +9,7 @@ const Index: NextPage = () => {
           takeyu1013's portfolio
         </h1>
       </header>
-      <main className="flex flex-wrap justify-center">
+      <main className="flex flex-wrap justify-center gap-4">
         <Card title="プロフィール">
           <table className="mx-auto">
             <tr className="border">
@@ -34,33 +34,7 @@ const Index: NextPage = () => {
             </tr>
           </table>
         </Card>
-        {/*        <div className="mx-auto p-4 w-screen lg:w-1/3">
-          <h2 className="text-center text-xl font-bold pb-2">プロフィール</h2>
-          <table className="mx-auto">
-            <tr className="border">
-              <td>名前</td>
-              <td>たけゆ</td>
-            </tr>
-            <tr className="border bg-green-100">
-              <td>本名</td>
-              <td>Yuto Takeuchi</td>
-            </tr>
-            <tr className="border">
-              <td>出身地</td>
-              <td>兵庫県</td>
-            </tr>
-            <tr className="border bg-green-100">
-              <td>今住んでいるところ</td>
-              <td>神奈川県</td>
-            </tr>
-            <tr className="border">
-              <td>職業</td>
-              <td>セールスエンジニア</td>
-            </tr>
-          </table>
-        </div>
-        <div className="mx-auto p-4 w-screen lg:w-1/3">
-          <h2 className="text-center text-xl font-bold pb-2">趣味</h2>
+        <Card title="趣味">
           <ul className="text-center pb-2">
             <li>プログラミング</li>
             <li>ゲーム（FPS、アクション）</li>
@@ -71,9 +45,8 @@ const Index: NextPage = () => {
             <li>温泉</li>
             <li>読書</li>
           </ul>
-        </div>
-        <div className="mx-auto p-4 w-screen lg:w-1/3">
-          <h2 className="text-center text-xl font-bold pb-2">スキル</h2>
+        </Card>
+        <Card title="スキル">
           <ul className="text-center pb-2">
             <li>C/C++（3年）</li>
             <li>Java（3年）</li>
@@ -83,9 +56,8 @@ const Index: NextPage = () => {
             <li>PostgreSQL</li>
             <li>Spring Boot</li>
           </ul>
-        </div>
-        <div className="mx-auto p-4 w-screen lg:w-1/3">
-          <h2 className="text-center text-xl font-bold pb-2">興味がある技術</h2>
+        </Card>
+        <Card title="興味がある技術">
           <ul className="text-center pb-2">
             <li>TypeScript</li>
             <li>Next.js</li>
@@ -95,27 +67,30 @@ const Index: NextPage = () => {
             <li>GraphQL</li>
             <li>Procreate</li>
           </ul>
-        </div>
-        <div className="mx-auto p-4 w-screen lg:w-1/3">
-          <h2 className="text-center text-xl font-bold pb-2">つくったもの</h2>
+        </Card>
+        <Card title="つくったもの">
           <a
             className="block text-center"
             href="http://todo-seven-beta.vercel.app/"
           >
             やることリスト
           </a>
-        </div>
-        <div className="mx-auto p-4 w-screen lg:w-1/3">
-          <h2 className="text-center text-xl font-bold pb-2">SNS</h2>
+        </Card>
+        <Card title="SNS">
           <ul className="text-center pb-2">
-            <li>GitHub</li>
-            <li>Qiita</li>
+            <li>
+              <a href="https://github.com/takeyu1013">GitHub</a>
+            </li>
+            <li>
+              <a href="https://qiita.com/takeyu1013">Qiita</a>
+            </li>
             <li>Facebook</li>
-            <li>Twitter</li>
+            <li>
+              <a href="https://twitter.com/takeyu1013">Twitter</a>
+            </li>
             <li>Instagrem</li>
           </ul>
-        </div>
-  */}
+        </Card>
       </main>
     </div>
   );
