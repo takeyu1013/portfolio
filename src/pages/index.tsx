@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Card from "../components/Card";
+import Link from "next/link";
 
 const Index: NextPage = () => {
   return (
@@ -9,7 +10,7 @@ const Index: NextPage = () => {
           takeyu1013's portfolio
         </h1>
       </header>
-      <main className="flex flex-wrap justify-center gap-4">
+      <main className="block justify-between w-screen max-w-5xl mx-auto lg:flex lg:flex-wrap">
         <Card title="プロフィール">
           <table className="mx-auto">
             <tr className="border">
@@ -69,26 +70,37 @@ const Index: NextPage = () => {
           </ul>
         </Card>
         <Card title="つくったもの">
-          <a
-            className="block text-center"
-            href="http://todo-seven-beta.vercel.app/"
-          >
-            やることリスト
-          </a>
+          <Link href="http://todo-seven-beta.vercel.app/">
+            <a className="block text-center text-blue-600">やることリスト</a>
+          </Link>
         </Card>
         <Card title="SNS">
           <ul className="text-center pb-2">
             <li>
-              <a href="https://github.com/takeyu1013">GitHub</a>
+              <Link href="https://github.com/takeyu1013">
+                <a className="text-blue-600">GitHub</a>
+              </Link>
             </li>
             <li>
-              <a href="https://qiita.com/takeyu1013">Qiita</a>
+              <Link href="https://qiita.com/takeyu1013">
+                <a className="text-blue-600">Qiita</a>
+              </Link>
             </li>
-            <li>Facebook</li>
             <li>
-              <a href="https://twitter.com/takeyu1013">Twitter</a>
+              <Link href="https://www.facebook.com/yuto.takeuchi.71/">
+                <a className="text-blue-600">Facebook</a>
+              </Link>
             </li>
-            <li>Instagrem</li>
+            <li>
+              <Link href="https://twitter.com/takeyu1013">
+                <a className="text-blue-600">Twitter</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="https://www.instagram.com/takeyu1013/">
+                <a className="text-blue-600">Instagrem</a>
+              </Link>
+            </li>
           </ul>
         </Card>
       </main>
