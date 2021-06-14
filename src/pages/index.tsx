@@ -10,7 +10,7 @@ const Index: NextPage = () => {
           takeyu's portfolio
         </h1>
       </header>
-      <main className="block justify-between w-screen max-w-5xl mx-auto lg:flex lg:flex-wrap">
+      <main className="block justify-between w-screen max-w-5xl mx-auto md:flex md:flex-wrap">
         <Card title="プロフィール">
           <table className="mx-auto">
             <tr className="border">
