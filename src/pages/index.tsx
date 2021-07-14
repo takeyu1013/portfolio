@@ -103,6 +103,12 @@ const Index: NextPage = () => {
             </li>
           </ul>
         </Card>
+        <Card title="資格">
+          <ul className="text-center pb-2">
+            <li>基本情報技術者試験</li>
+            <li>AWS 認定ソリューションアーキテクト – アソシエイト</li>
+          </ul>
+        </Card>
       </main>
     </div>
   );
