@@ -4,6 +4,7 @@ const Home = () => {
       <h1>Takeyu&apos;s portfolio</h1>
       <h2>プロフィール</h2>
       <table>
+        <tbody>
         {[
           ["名前", "たけゆ"],
           ["本名", "Yuto Takeuchi"],
@@ -18,6 +19,7 @@ const Home = () => {
             </tr>
           );
         })}
+        </tbody>
       </table>
       <h2>趣味</h2>
       <p>WIP</p>
