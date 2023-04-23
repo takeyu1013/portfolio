@@ -1,8 +1,13 @@
-import { Test } from "./test";
+"use client";
+import { motion } from "framer-motion";
 
 const Home = () => {
   return (
-    <main>
+    <motion.main
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 3 }}
+    >
       <h1>Takeyu&apos;s portfolio</h1>
       <h2>プロフィール</h2>
       <table>
@@ -33,8 +38,7 @@ const Home = () => {
       <p>WIP</p>
       <h2>SNS</h2>
       <p>WIP</p>
-      <Test />
-    </main>
+    </motion.main>
   );
 };
 
