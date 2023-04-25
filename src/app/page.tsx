@@ -13,37 +13,39 @@ const Home = () => {
         <H1 className="text-white">Takeyu&apos;s portfolio</H1>
         <p className="text-white">たけゆのポートフォリオページです</p>
       </section>
-      <section className="grid items-center container py-10">
+      <section className="grid items-center container py-10 gap-4">
         <H2>プロフィール</H2>
-        <table>
-          <tbody>
-            {[
-              ["名前", "たけゆ"],
-              ["本名", "Yuto Takeuchi"],
-              ["出身地", "兵庫県"],
-              ["今住んでいるところ", "神奈川県"],
-              ["職業", "セールスエンジニア"],
-            ].map(([key, value], index) => {
-              return (
-                <tr key={index}>
-                  <td>{key}</td>
-                  <td>{value}</td>
-                </tr>
-              );
-            })}
-          </tbody>
-        </table>
+        <div className="flex place-content-center">
+          <table className="max-w-4xl grow">
+            <tbody>
+              {[
+                ["名前", "たけゆ"],
+                ["本名", "Yuto Takeuchi"],
+                ["出身地", "兵庫県"],
+                ["今住んでいるところ", "神奈川県"],
+                ["職業", "セールスエンジニア"],
+              ].map(([key, value], index) => {
+                return (
+                  <tr key={index} className="m-0 border-t p-0 even:bg-muted">
+                    <td className="border px-4 py-2">{key}</td>
+                    <td className="border px-4 py-2">{value}</td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        </div>
+        <H2>趣味</H2>
+        <p>WIP</p>
+        <H2>スキル</H2>
+        <p>WIP</p>
+        <H2>興味がある技術</H2>
+        <p>WIP</p>
+        <H2>つくったもの</H2>
+        <p>WIP</p>
+        <H2>SNS</H2>
+        <p>WIP</p>
       </section>
-      <h2>趣味</h2>
-      <p>WIP</p>
-      <h2>スキル</h2>
-      <p>WIP</p>
-      <h2>興味がある技術</h2>
-      <p>WIP</p>
-      <h2>つくったもの</h2>
-      <p>WIP</p>
-      <h2>SNS</h2>
-      <p>WIP</p>
     </motion.main>
   );
 };
