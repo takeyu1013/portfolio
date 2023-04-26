@@ -1,5 +1,6 @@
+import { AnchorHTMLAttributes, ReactNode, forwardRef } from "react";
+
 import { cn } from "@/lib/utils";
-import { ReactNode } from "react";
 
 type PropsWithChildrenAndClassName = {
   children?: ReactNode;
@@ -31,3 +32,17 @@ export function H2({ children, className }: PropsWithChildrenAndClassName) {
     </h2>
   );
 }
+
+export function Td({ children, className }: PropsWithChildrenAndClassName) {
+  return <td className={cn("border px-4 py-2", className)}>{children}</td>;
+}
+
+const Link = forwardRef<
+  HTMLAnchorElement,
+  AnchorHTMLAttributes<HTMLAnchorElement>
+>(({ className, ...props }, ref) => {
+  return <a className={cn("text-blue-600", className)} ref={ref} {...props} />;
+});
+Link.displayName = "Link";
+
+export { Link };
