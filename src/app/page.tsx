@@ -1,4 +1,3 @@
-"use client";
 import { Grid, List, ListItem, Metric, Subtitle, Title } from "@tremor/react";
 
 const Home = () => {
@@ -11,9 +10,7 @@ const Home = () => {
         </Subtitle>
       </Grid>
       <Grid className="max-w-5xl mx-auto p-4 gap-2">
-        <Title className="border-b-[1px] text-black font-bold">
-          プロフィール
-        </Title>
+        <Title className="border-b-[1px]">Profile</Title>
         <List>
           {[
             ["名前", "たけゆ"],
@@ -30,7 +27,7 @@ const Home = () => {
             );
           })}
         </List>
-        <Title className="border-b-[1px] text-black font-bold">趣味</Title>
+        <Title className="border-b-[1px]">Hobby</Title>
       </Grid>
     </main>
   );
