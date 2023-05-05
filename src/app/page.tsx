@@ -1,10 +1,11 @@
+"use client";
 import { Grid, List, ListItem, Metric, Subtitle, Title } from "@tremor/react";
 
 const Home = () => {
   return (
     <main>
       <Grid className="place-items-center bg-teal-300 py-10 gap-4">
-        <Metric className="text-white">Takeyu's portfolio</Metric>
+        <Metric className="text-white">Takeyu&apos;s portfolio</Metric>
         <Subtitle className="text-white">
           たけゆのポートフォリオページです
         </Subtitle>
