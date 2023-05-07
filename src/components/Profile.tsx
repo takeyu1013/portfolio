@@ -1,12 +1,16 @@
 "use client";
-import { List, ListItem, Title } from "@tremor/react";
+import { Grid, List, ListItem, Title } from "@tremor/react";
 import { motion } from "framer-motion";
 
 export const Profile = () => {
   return (
-    <>
+    <Grid className="gap-2">
       <Title className="border-b-[1px]">Profile</Title>
-      <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
+      <motion.div
+        initial={{ x: 50, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
         <List>
           {[
             ["名前", "たけゆ"],
@@ -24,6 +28,6 @@ export const Profile = () => {
           })}
         </List>
       </motion.div>
-    </>
+    </Grid>
   );
 };
