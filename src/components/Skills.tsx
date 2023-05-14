@@ -7,7 +7,7 @@ export const Skills = () => {
   return (
     <Grid className="gap-2">
       <Title>Skills</Title>
-      <Grid numCols={1} numColsLg={3} className="gap-4">
+      <Grid numCols={1} numColsMd={3} className="gap-4">
         {[
           ["TypeScript", "/ts.svg"],
           ["Python", "/py.svg"],
