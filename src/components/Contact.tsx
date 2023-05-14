@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export const Contact = () => {
   return (
     <Grid className="gap-2">
-      <Title className="border-b-[1px]">Contact</Title>
+      <Title>Contact</Title>
       <motion.ul
         initial="hidden"
         whileInView="visible"

@@ -1,51 +1,32 @@
 "use client";
-import { Grid, Title } from "@tremor/react";
+import { Card, Grid, List, ListItem, Text, Title } from "@tremor/react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export const Skills = () => {
   return (
     <Grid className="gap-2">
-      <Title className="border-b-[1px]">Skills</Title>
-      <motion.ul
-        initial="hidden"
-        whileInView="visible"
-        variants={{
-          visible: {
-            opacity: 1,
-            transition: {
-              duration: 1,
-              delayChildren: 0.25,
-              staggerChildren: 0.25,
-            },
-          },
-          hidden: { opacity: 0 },
-        }}
-        className="list-inside list-disc"
-      >
+      <Title>Skills</Title>
+      <Grid numCols={1} numColsLg={3} className="gap-4">
         {[
-          "TypeScript",
-          "Python",
-          "C++",
-          "Java",
-          "Next.js",
-          "AWS",
-          "Kubernetes",
-          "PostgreSQL",
-          "Spring Boot",
-        ].map((skill, index) => {
+          ["TypeScript", "/ts.svg"],
+          ["Python", "/py.svg"],
+          ["C++", "/cpp.svg"],
+          ["Java", "/java.svg"],
+          ["Next.js", "/next.svg"],
+          ["AWS", "/aws.svg"],
+          ["Kubernetes", "/k8s.svg"],
+          ["PostgreSQL", "/pg.svg"],
+          ["Spring Boot", "/spring.svg"],
+        ].map(([name, image], index) => {
           return (
-            <motion.li
-              key={index}
-              variants={{
-                visible: { opacity: 1, x: 0 },
-                hidden: { opacity: 0, x: 100 },
-              }}
-            >
-              {skill}
-            </motion.li>
+            <Card key={index} className="grid place-items-center">
+              <Image src={image} alt={name} width={50} height={50} />
+              <Text>{name}</Text>
+            </Card>
           );
         })}
-      </motion.ul>
+      </Grid>
     </Grid>
   );
 };

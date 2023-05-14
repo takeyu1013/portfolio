@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export const Certification = () => {
   return (
     <Grid className="gap-2">
-      <Title className="border-b-[1px]">Certification</Title>
+      <Title>Certification</Title>
       <motion.ul
         initial="hidden"
         whileInView="visible"

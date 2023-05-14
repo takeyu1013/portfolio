@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export const Profile = () => {
   return (
     <Grid className="gap-2">
-      <Title className="border-b-[1px]">Profile</Title>
+      <Title>Profile</Title>
       <motion.div
         initial={{ x: 50, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}

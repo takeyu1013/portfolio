@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export const Works = () => {
   return (
     <Grid className="gap-2">
-      <Title className="border-b-[1px]">Works</Title>
+      <Title>Works</Title>
       <motion.ul
         initial="hidden"
         whileInView="visible"
