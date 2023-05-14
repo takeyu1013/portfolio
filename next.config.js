@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  appDir: true,
-  serverComponentsExternalPackages: ["@tremor/react"],
+  experimental: {
+    serverComponentsExternalPackages: ["@tremor/react"],
+  },
   output: "export",
   images: {
     unoptimized: true,
