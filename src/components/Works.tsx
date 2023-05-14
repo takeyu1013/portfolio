@@ -2,10 +2,10 @@
 import { Grid, Title } from "@tremor/react";
 import { motion } from "framer-motion";
 
-export const Skills = () => {
+export const Works = () => {
   return (
     <Grid className="gap-2">
-      <Title className="border-b-[1px]">Skills</Title>
+      <Title className="border-b-[1px]">Works</Title>
       <motion.ul
         initial="hidden"
         whileInView="visible"
@@ -20,19 +20,11 @@ export const Skills = () => {
           },
           hidden: { opacity: 0 },
         }}
-        className="list-inside list-disc"
       >
         {[
-          "TypeScript",
-          "Python",
-          "C++",
-          "Java",
-          "Next.js",
-          "AWS",
-          "Kubernetes",
-          "PostgreSQL",
-          "Spring Boot",
-        ].map((skill, index) => {
+          ["ToDoアプリ", "http://todo-seven-beta.vercel.app/"],
+          ["Railsチュートリアルクローン", "https://study-t3.vercel.app/"],
+        ].map(([title, href], index) => {
           return (
             <motion.li
               key={index}
@@ -41,7 +33,9 @@ export const Skills = () => {
                 hidden: { opacity: 0, x: 100 },
               }}
             >
-              {skill}
+              <a href={href} target="_blank" className="text-blue-500">
+                {title}
+              </a>
             </motion.li>
           );
         })}

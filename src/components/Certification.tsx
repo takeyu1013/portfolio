@@ -2,10 +2,10 @@
 import { Grid, Title } from "@tremor/react";
 import { motion } from "framer-motion";
 
-export const Skills = () => {
+export const Certification = () => {
   return (
     <Grid className="gap-2">
-      <Title className="border-b-[1px]">Skills</Title>
+      <Title className="border-b-[1px]">Certification</Title>
       <motion.ul
         initial="hidden"
         whileInView="visible"
@@ -23,16 +23,9 @@ export const Skills = () => {
         className="list-inside list-disc"
       >
         {[
-          "TypeScript",
-          "Python",
-          "C++",
-          "Java",
-          "Next.js",
-          "AWS",
-          "Kubernetes",
-          "PostgreSQL",
-          "Spring Boot",
-        ].map((skill, index) => {
+          "AWS Certified Solutions Architect – Associate",
+          "Fundamental Information Technology Engineer Examination",
+        ].map((item, index) => {
           return (
             <motion.li
               key={index}
@@ -41,7 +34,7 @@ export const Skills = () => {
                 hidden: { opacity: 0, x: 100 },
               }}
             >
-              {skill}
+              {item}
             </motion.li>
           );
         })}
